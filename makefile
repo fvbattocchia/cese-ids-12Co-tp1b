@@ -13,6 +13,9 @@ all: build_folders $(OBJ_FILES)
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@echo Compiling source file $(notdir $(basename $<))
 	@gcc -c $< -I$(INC_DIR) -o $@
+	
+doc: 
+	@doxygen doxyfile
 
 ###############################################################################
 # Creation of output folders
