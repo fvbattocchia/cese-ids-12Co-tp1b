@@ -41,9 +41,9 @@ typedef struct alumno_s {
 /*!
  * @brief Convierte los datos de un alumno en una cadena JSON
  *
- * @Param cadena[out] Puntero a a la cadena donde se devuelve el resultado
- * @Param espacio[in] Cantidad de bytes disponible en la cadena de resultados
- * @Param alumno[in]  Puntero a la estructura con los datos del alumno
+ * @param[out] cadena Puntero a a la cadena donde se devuelve el resultado
+ * @param[in]  espacio Cantidad de bytes disponible en la cadena de resultados
+ * @param[in]  alumno  Puntero a la estructura con los datos del alumno
  *
  * @return true   Los datos del alumno se serializaron correctamente
  * @return false  No se pudo serializar los datos por falta de espacio
